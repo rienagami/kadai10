@@ -53,7 +53,7 @@ if($status==false){
  <header>
        <nav>
            <div class="total">
-               <img class="logo"  src="img/dict.png" alt="">
+               <img class="logo"  src="img/dictorange.png" alt="">
            </div>
        </nav>
    </header>

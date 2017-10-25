@@ -1,4 +1,5 @@
 <?php
+session_start();
 ////外部ファイル読み込み
 //include("functions.php");
 //登録はできるが文字化けした状態で登録されている。
@@ -31,7 +32,7 @@ $lpw        = $_POST["lpw"];
 //2 DBを接続
 //$pdo = db_con();
 ////ハッシュ化？？？？とは？？？
-//$pw = password_hash("test3", PASSWORD_DEFAULT);
+$pw = password_hash("test3", PASSWORD_DEFAULT);
 try{
 $pdo = new
 PDO('mysql:dbname=dict_db;charset=utf8;host=localhost','root','');

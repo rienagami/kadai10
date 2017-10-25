@@ -14,10 +14,11 @@
    <img class="logo" src="img/dictorange.png">
  
 <div>
-   <form name="form1" action="login_act.php" method="post"></form>
-   ID:<input  type="text" name="lid" value="" />
-   PASS:<input type="password" name="lpw" value=""/>
-   <input type="submit" value="login"><br>
+   <form name="form1" action="login_act.php" method="post">
+   ID:<input  type="text" name="lid" />
+   PASS:<input type="password" name="lpw" />
+   <input type="submit" value="LOGIN"><br>
+   </form>
 </div>
    
 <div>

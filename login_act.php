@@ -54,7 +54,7 @@ if($res==false){
    
 //    $error = $stmt->errorInfo();
 //    exit("QueryError:".$error[2]);
-//    
+//
 //}
 
 //4.抽出データ数取得
@@ -67,19 +67,22 @@ $val = $stmt->fetch();//1レコードだけ取得する方法
 if(
 $val["id"]!=""){
     $_SESSION["chk_ssid"] =session_id();
-    $_SESSION["name"] = $val["name"];
+    $_SESSION["name"] = $val['name'];
+//    print"a";
     header("Location: select.php");
 }else{
     header("Location: logout.php");
+//    print"b";
 }
 exit();
+
 //password_verify($_POST["lpw"],$val["lpw"])){
 //    $_SESSION["chk_ssid"] = session_id();
 //    $_SESSION["name"]     = $val['name'];
-//    header("Location: select.php");    
+//    header("Location: select.php");
 //}else{
-//    
-//    
+//
+//
 //    header("Location: logout.php");
 //}
 //exit();
@@ -89,13 +92,13 @@ exit();
 //    $_SESSION["chk_ssid"] = session_id();
 //    $_SESSION["name"]     = $val['name'];
 //    header("Location: select.php");
-    
+
 //if( password_verify($_POST["lpw"],$val["lpw"])){
 //  $_SESSION["chk_ssid"]  = session_id();
 //  $_SESSION["kanri_flg"] = $val['kanri_flg'];
 //  $_SESSION["name"]      = $val['name'];
-//  header("Location: select.php");    
-    
+//  header("Location: select.php");
+
 //}else{
 //    //でなければlogout処理を
 //    header("Location: logout.php");
