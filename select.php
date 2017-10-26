@@ -26,7 +26,7 @@ if($status==false){
 }else{
     while( $result = $stmt->fetch(PDO::FETCH_ASSOC))
    {
-    $view .= 'ここにユーザートップページ';
+//    $view .= 'ここにユーザートップページ';
     
     
     
@@ -52,17 +52,24 @@ if($status==false){
    
  <header>
        <nav>
-           <div class="total">
-               <img class="logo"  src="img/dictorange.png" alt="">
+           <div >
+<!--<img class="head" src="img/dictorange.png" alt="">-->
            </div>
        </nav>
    </header>
 <!--   headerここまで-->
 <!--   ここからメイン-->
   
-  
+<!--ここでnameをひっぱ  -->
   <div>ようこそ<?=$_SESSION["name"]?>さん</div>
   <div>
+    <div>
+   <a href="logout.php">ログアウト</a>
+</div>
+    <div>
+   <a href="mypage.php">マイページ</a>
+</div>
+     
       <div><?=$view?></div>
   </div>
   

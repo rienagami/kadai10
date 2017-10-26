@@ -18,6 +18,11 @@ body, html{
     text-align: center;
 }
 
+.head{
+    max-height:15px;
+    
+}
+
 .logo{
     
 /*
